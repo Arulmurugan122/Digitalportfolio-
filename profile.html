@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+ <html>
+ <head> 
+    <title>Your Name - portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(135, 222, 142);
+        }
+
+        header {
+            background-color:burlywood;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; 
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+
+        nav {
+            background-color: darkkhaki;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color:lightgray;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+        }
+
+        .download-button {
+            background-color:lightgray;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color:powderblue;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+ </head>
+ <body>
+     <header>
+        <div class="header-content">
+
+            <h1>Arulmurugan</h1>
+        </div>
+     </header>    
+
+     <nav>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#resume">resume</a></li>
+        </ul>
+     </nav>
+
+     <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello Everyone! This is Arulmurugan B i am a computer science student.</p>
+        </div>
+     </section>
+
+     <section id="education">
+        <div class="section-content">
+            <h2>BCA</h2>
+            <P>Jairams Arts And Science College</P>
+        </div>
+     </section>
+     <section id="skills">
+         <div class="section-content">
+            <h2>skills</h2>
+            <ul>
+                <li>web devolpement</li>
+                <li>editing</li>
+            </ul>
+         </div>
+     </section>
+     <section id="projects">
+        <div class="section-content">
+            <h2>projects</h2>
+            <ul>
+                <li></li>
+                <li></li>
+
+            </ul>
+        </div>
+     </section>
+
+     <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>Resume</h2>
+                <a href="arul resume.docx">download</a>
+            </div>
+        </center>
+     </section>
+     <footer>
+        <p>&copy; 2023 Arulmurugan</p>
+     </footer>
+
+     <script>
+       
+       document.querySelectorAll('a[href="a"]').forEach(anchor => {
+           anchor.addEventListener('click',function(e){
+               e.preventDefault();
+
+               const targetId = this.getAttribute('href').substring(1);
+               const targetElement = documeny.getElementbyId(targetId);
+
+               if (targetElement) {
+                  Window.scrollTo({
+                      top:targetElement.offsetTop,
+                      behavior: 'smooth' 
+                  })
+               }
+           })
+       })  
+     </script>
+ </body>
+ </html>
